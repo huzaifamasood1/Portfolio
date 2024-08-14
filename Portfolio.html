@@ -41,21 +41,21 @@
         <div class="project">
             <div class="project-description">
                 <h3>Trivia Game</h3>
-                <p><li> <span> Implemented multiple-choice questions with four options.</span></li>
+                <li> <span> Implemented multiple-choice questions with four options.</span></li>
                     <li> <span> Incorporated C++ libraries and functions for enhanced functionality.</span></li>
                     <li> <span> Implemented win streak mechanics and a two-strike system for added challenge.</span></li>
-                    <li> <span> Integrated lifelines allowing users to choose any two options or skip a question.</span></li></p>
+                    <li> <span> Integrated lifelines allowing users to choose any two options or skip a question.</span></li>
             </div>
             <a href="#" class="btn">Project Link</a>
         </div>
         <div class="project">
             <div class="project-description">
                 <h3>Akinator</h3>
-                <p><li><span> Designed and implemented Akinator using object-oriented programming principles.</span></li>
+                <li><span> Designed and implemented Akinator using object-oriented programming principles.</span></li>
                     <li><span> Included a database of predefined players.</span></li>
                     <li><span> Utilized concepts such as inheritance to structure player categories.</span></li>
                     <li><span> An interactive guessing game where the program deduces the player based on user responses.</span></li>
-                    <li><span> Proficiency in OOP concepts and algorithmic thinking.</span></li></p>
+                    <li><span> Proficiency in OOP concepts and algorithmic thinking.</span></li>
             </div>
             <a href="#" class="btn">Project Link</a>
         </div>
@@ -138,78 +138,6 @@
         });
     });
     
-    </script> <div class="chatbot-container">
-        <div class="chatbot-icon" id="chatbot-icon">
-            <img src="chatbot-icon.png" alt="Chatbot Icon">
-        </div>
-        <div class="chatbot-window" id="chatbot-window">
-            <div class="chatbot-header">
-                <h3>Chat with Me</h3>
-                <button id="close-chatbot">  <i class="fa fa-times"></i> </button>
-            </div>
-            <div class="chatbot-messages" id="chatbot-messages">
-                <div class="bot-message">Hi there! I'm Huzaifa's personal chatbot. Ask me anything about him! <br> </div>
-            </div>
-            <div id="message-container">
-                <input id="message-box" type="text" placeholder="Type your message..." />
-                <button id="send-button">
-                    <i class="fa fa-paper-plane"></i>
-                </button>
-            </div>
-            
-        </div>
-    </div>
-
-    <script>document.getElementById('chatbot-icon').addEventListener('click', function() {
-        document.getElementById('chatbot-window').style.display = 'block';
-    });
-    
-    document.getElementById('close-chatbot').addEventListener('click', function() {
-        document.getElementById('chatbot-window').style.display = 'none';
-    });
-    
-    document.getElementById('send-button').addEventListener('click', function() {
-        let userInput = document.getElementById('message-box').value; // Corrected id
-        if (userInput) {
-            appendMessage(userInput, 'user');
-            respondToUser(userInput);
-            document.getElementById('message-box').value = ''; // Corrected id
-        }
-    });
-    
-    function appendMessage(message, sender) {
-        let messageContainer = document.createElement('div');
-        messageContainer.className = sender === 'user' ? 'user-message' : 'bot-message';
-        messageContainer.textContent = message;
-        document.getElementById('chatbot-messages').appendChild(messageContainer);
-        document.getElementById('chatbot-messages').scrollTop = document.getElementById('chatbot-messages').scrollHeight;
-    }
-    
-    function respondToUser(userInput) {
-        let botResponse = '';
-    
-        switch (userInput.toLowerCase()) {
-            case 'name':
-                botResponse = 'My name is Huzaifa Bin Masood.';
-                break;
-            case 'age':
-                botResponse = 'I am 19 years old.';
-                break;
-            case 'degree':
-                botResponse = 'I am pursuing a BSc in Computer Science.';
-                break;
-            case 'university':
-                botResponse = 'I study at SRH Berlin University of Applied Sciences.';
-                break;
-            case 'date of birth':
-                botResponse = 'I was born on 07 Oct 2004.';
-                break;
-            default:
-                botResponse = "Sorry, I don't have information on that. Please try asking something else!";
-        }
-    
-        appendMessage(botResponse, 'bot');
-    }
-    </script>
+    </script> 
 </body>
 </html> 
